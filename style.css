@@ -1,0 +1,581 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: "Roboto Slab", serif;
+    color: #27231f;
+    background: #f7efe5;
+}
+
+.containerPage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background: #f7efe5;
+}
+.containerPhoto{
+    width: 50%;
+    min-height: 100vh;
+    position: relative;
+    background-image: url(./ressources/fontPage.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.photoOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(150deg, rgba(39, 35, 31, 0.08), rgba(39, 35, 31, 0.56));
+}
+.imageCaption {
+    position: absolute;
+    right: clamp(24px, 5vw, 72px);
+    bottom: 42px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fffaf4;
+    font-family: "Inter", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+.captionLine {
+    width: 42px;
+    height: 1px;
+    background: #f7be7c;
+}
+.containerText{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: clamp(28px, 5vw, 68px) clamp(28px, 7vw, 110px);
+    background: radial-gradient(circle at 100% 0%, rgba(234, 210, 183, 0.85), transparent 42%), #faecde;
+}
+.homeHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.homeEyebrow,
+.welcomeLabel {
+    color: #a35e37;
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+.homeMark {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    border: 1px solid rgba(163, 94, 55, 0.5);
+    border-radius: 50%;
+    color: #a35e37;
+    font-family: "Lumanosimo", cursive;
+    font-size: 1.4rem;
+}
+.containerPresentation{
+    width: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 590px;
+}
+.containerPhoto_logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.containerPhoto_logo h1{
+    margin-top: 3px;
+    color:#a35e37;
+    font-family: "Lumanosimo", cursive;
+    font-size: clamp(3.2rem, 6vw, 6rem);
+    font-weight: 400;
+    line-height: 0.95;
+}
+.photoLogo{
+    width: clamp(105px, 13vw, 170px);
+    height: clamp(105px, 13vw, 170px);
+    border-radius: 50%;
+    object-fit: cover;
+    border: 7px solid rgba(255, 250, 244, 0.75);
+    box-shadow: 0 18px 38px rgba(89, 56, 35, 0.16);
+}
+.homeDescription {
+    max-width: 520px;
+    margin-top: 32px;
+    color: #66594e;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    line-height: 1.8;
+}
+.containerNav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.containerNav a {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.primaryAction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 245px;
+    padding: 17px 20px;
+    color: #fffaf4;
+    background: #a35e37;
+    box-shadow: 0 12px 24px rgba(163, 94, 55, 0.22);
+    transition: background 200ms ease, transform 200ms ease;
+}
+.primaryAction:hover,
+.primaryAction:focus-visible {
+    background: #7f452a;
+    transform: translateY(-3px);
+}
+.primaryAction span:last-child {
+    font-size: 1.4rem;
+}
+.secondaryAction {
+    padding: 8px 0;
+    border-bottom: 1px solid #a35e37;
+    color: #6d4c36;
+}
+.secondaryAction:hover,
+.secondaryAction:focus-visible {
+    color: #a35e37;
+}
+.homeFooter {
+    margin-top: 40px;
+    color: #8a7666;
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+}
+
+.galleryPage {
+    min-height: 100vh;
+    padding: 56px clamp(24px, 7vw, 110px) 80px;
+    background: radial-gradient(circle at 90% 0%, #ead2b7 0, transparent 34%), #f7efe5;
+}
+
+.galleryHeader {
+    max-width: 760px;
+    margin: 0 auto 52px;
+    text-align: center;
+}
+
+.backLink {
+    display: inline-block;
+    margin-bottom: 42px;
+    color: #6d4c36;
+    font-family: "Inter", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.eyebrow {
+    color: #a35e37;
+    font-family: "Inter", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.galleryHeader h1 {
+    margin: 12px 0 18px;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1;
+}
+
+.galleryIntro {
+    max-width: 600px;
+    margin: auto;
+    color: #66594e;
+    font-size: 1.08rem;
+    line-height: 1.7;
+}
+
+.containerGalerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 34px;
+    max-width: 1240px;
+    margin: auto;
+}
+
+.photoCard {
+    overflow: hidden;
+    background: #fffaf4;
+    box-shadow: 0 18px 45px rgba(89, 56, 35, 0.12);
+    transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.photoCard:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 24px 55px rgba(89, 56, 35, 0.2);
+}
+
+.photoFrame {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #d8c0a5;
+}
+
+.photoFrame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 500ms ease;
+}
+
+.photoFrame {
+    cursor: zoom-in;
+}
+
+.photoFrame:focus-visible {
+    outline: 4px solid #a35e37;
+    outline-offset: -4px;
+}
+
+.photoCard:hover .photoFrame img {
+    transform: scale(1.05);
+}
+
+.photoNumber {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    padding: 7px 10px;
+    color: #fffaf4;
+    background: rgba(39, 35, 31, 0.72);
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.photoInfo {
+    padding: 24px 24px 28px;
+}
+
+.photoInfo h2 {
+    margin-bottom: 12px;
+    font-size: 1.35rem;
+}
+
+.photoInfo p {
+    color: #66594e;
+    font-family: "Inter", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+.modalOpen {
+    overflow: hidden;
+}
+
+.photoModal {
+    position: fixed;
+    z-index: 10;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding: 30px;
+    background: rgba(26, 21, 17, 0.88);
+}
+
+.photoModal[hidden] {
+    display: none;
+}
+
+.modalContent {
+    max-width: min(1000px, 92vw);
+    max-height: 90vh;
+    text-align: center;
+}
+
+.modalImage {
+    display: block;
+    max-width: 100%;
+    max-height: 78vh;
+    object-fit: contain;
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+}
+
+.modalContent h2 {
+    margin-top: 18px;
+    color: #fffaf4;
+    font-size: 1.35rem;
+}
+
+.modalClose {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(255, 250, 244, 0.6);
+    border-radius: 50%;
+    color: #fffaf4;
+    background: transparent;
+    cursor: pointer;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.modalClose:hover,
+.modalClose:focus-visible {
+    background: rgba(255, 250, 244, 0.18);
+}
+
+.contactPage {
+    width: 100%;
+    min-height: 100vh;
+    padding: 56px clamp(24px, 7vw, 110px) 80px;
+    background: radial-gradient(circle at 90% 0%, #ead2b7 0, transparent 34%), #f7efe5;
+}
+
+.contactPage .galleryHeader {
+    margin-bottom: 48px;
+}
+
+.containerContact {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.85fr) minmax(320px, 1.15fr);
+    gap: clamp(32px, 7vw, 100px);
+    align-items: center;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: clamp(28px, 5vw, 60px);
+    border: 1px solid rgba(109, 76, 54, 0.16);
+    background: rgba(255, 250, 244, 0.72);
+    box-shadow: 0 22px 60px rgba(89, 56, 35, 0.12);
+}
+
+.contactLead {
+    padding-right: 12px;
+}
+
+.contactKicker {
+    color: #a35e37;
+    font-family: "Inter", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.contactLead h2 {
+    margin: 14px 0 18px;
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+    line-height: 1.12;
+}
+
+.contactLead p {
+    color: #66594e;
+    font-family: "Inter", sans-serif;
+    font-size: 0.98rem;
+    line-height: 1.75;
+}
+
+.contactDetails {
+    display: grid;
+    gap: 16px;
+}
+
+.contactCard {
+    display: grid;
+    grid-template-columns: 46px 1fr auto;
+    gap: 16px;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid rgba(109, 76, 54, 0.18);
+    color: #27231f;
+    background: #fffaf4;
+    text-decoration: none;
+    transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.contactCard:hover,
+.contactCard:focus-visible {
+    border-color: #a35e37;
+    box-shadow: 0 10px 24px rgba(89, 56, 35, 0.12);
+    transform: translateX(5px);
+}
+
+.contactIcon {
+    display: grid;
+    width: 46px;
+    height: 46px;
+    place-items: center;
+    border-radius: 50%;
+    color: #fffaf4;
+    background: #a35e37;
+    font-family: "Inter", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.contactCard strong,
+.contactCard small {
+    display: block;
+}
+
+.contactCard strong {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.contactCard small {
+    color: #6d4c36;
+    font-family: "Inter", sans-serif;
+    font-size: 0.88rem;
+}
+
+.contactArrow {
+    color: #a35e37;
+    font-size: 1.4rem;
+}
+
+.contactNote {
+    grid-column: 2;
+    color: #66594e;
+    font-family: "Inter", sans-serif;
+    font-size: 0.86rem;
+}
+
+.contactNote span {
+    display: inline-block;
+    margin-right: 7px;
+    color: #a35e37;
+    font-weight: 800;
+}
+
+
+@media (max-width: 600px) {
+    .containerPage {
+        display: block;
+    }
+
+    .containerPhoto {
+        width: 100%;
+        min-height: 38vh;
+        height: 38vh;
+    }
+
+    .imageCaption {
+        right: 20px;
+        bottom: 22px;
+        font-size: 0.65rem;
+    }
+
+    .containerText {
+        width: 100%;
+        min-height: 62vh;
+        padding: 28px 22px 34px;
+    }
+
+    .containerPresentation {
+        padding: 46px 0 38px;
+    }
+
+    .containerPhoto_logo {
+        gap: 16px;
+    }
+
+    .containerPhoto_logo h1 {
+        font-size: clamp(2.8rem, 15vw, 4.4rem);
+    }
+
+    .photoLogo {
+        width: 92px;
+        height: 92px;
+        border-width: 4px;
+    }
+
+    .homeDescription {
+        margin-top: 24px;
+        font-size: 0.95rem;
+        line-height: 1.65;
+    }
+
+    .containerNav {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .primaryAction {
+        width: 100%;
+    }
+
+    .homeFooter {
+        margin-top: 30px;
+        line-height: 1.5;
+    }
+
+    .galleryPage {
+        padding: 30px 18px 56px;
+    }
+
+    .backLink {
+        margin-bottom: 32px;
+    }
+
+    .galleryHeader {
+        margin-bottom: 36px;
+    }
+
+    .galleryIntro {
+        font-size: 0.98rem;
+    }
+
+    .contactPage {
+        padding: 30px 18px 56px;
+    }
+
+    .contactPage .galleryHeader {
+        margin-bottom: 36px;
+    }
+
+    .containerContact {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 28px 20px;
+    }
+
+    .contactNote {
+        grid-column: auto;
+    }
+
+    .contactCard {
+        grid-template-columns: 40px 1fr auto;
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .contactIcon {
+        width: 40px;
+        height: 40px;
+    }
+}

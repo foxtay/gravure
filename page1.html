@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxt@y</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="galleryPage">
+        <header class="galleryHeader">
+            <a class="backLink" href="index.html">&larr; Accueil</a>
+            <p class="eyebrow">Foxt@y · Gravures sur bois</p>
+            <h1>Galerie photo</h1>
+            <p class="galleryIntro">Quelques créations réalisées avec patience .</p>
+        </header>
+        <section class="containerGalerie" aria-label="Galerie des créations"></section>
+    </main>
+    <div class="photoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+        <button class="modalClose" type="button" aria-label="Fermer la photo agrandie">&times;</button>
+        <div class="modalContent">
+            <img class="modalImage" src="" alt="">
+            <h2 id="modalTitle"></h2>
+        </div>
+    </div>
+    <script type="module" src="./gallery.js"></script>
+</body>
+</html>
