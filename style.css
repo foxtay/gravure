@@ -66,21 +66,27 @@ body {
 .welcomeLabel {
     color: #a35e37;
     font-family: "Inter", sans-serif;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 800;
     letter-spacing: 0.16em;
     text-transform: uppercase;
 }
 .homeMark {
     display: grid;
-    width: 42px;
-    height: 42px;
+    width: 110px;
+    height: 110px;
     place-items: center;
     border: 1px solid rgba(163, 94, 55, 0.5);
     border-radius: 50%;
     color: #a35e37;
     font-family: "Lumanosimo", cursive;
     font-size: 1.4rem;
+}
+.homeMark img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 .containerPresentation{
     width: 100%;
