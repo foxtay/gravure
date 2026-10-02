@@ -89,6 +89,16 @@ export const photos = [
         title: "Porte clé les inséparables",
         description: "Porte clé les inséparables, gravé avec soin pour un rendu unique."
     },
+    {
+        image: "ressources/gallerie/hibou.jpg",
+        title: "Boucle d'oreille hibou",
+        description: "Boucle d'oreille hibou, élégante et originale, gravée avec soin pour un rendu unique."
+    },
+    {
+        image: "ressources/gallerie/bouleChat.jpg",
+        title: "Boule noël chat",
+        description: "Boule de noël avec chat, originale et personnalisable."
+    },
 ];
 
 
