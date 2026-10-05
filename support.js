@@ -99,6 +99,16 @@ export const photos = [
         title: "Boule noël chat",
         description: "Boule de noël avec chat, originale et personnalisable."
     },
+    {
+        image: "ressources/gallerie/bouleR.jpg",
+        title: "Boule porte billet",
+        description: "Boule de noël avec un caribou , porte billet, originale et personnalisable."
+    },
+    {
+        image: "ressources/gallerie/pull.jpg",
+        title: "pull de noël",
+        description: "Pull de noël en bois, bicolore , original et personnalisable."
+    },
 ];
 
 
