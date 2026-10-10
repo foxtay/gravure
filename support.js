@@ -109,6 +109,36 @@ export const photos = [
         title: "pull de noël",
         description: "Pull de noël en bois, bicolore , original et personnalisable."
     },
+    {
+        image: "ressources/gallerie/animBoucles.jpg",
+        title: "Boucle d'oreille animaux",
+        description: "Boucle d'oreille animaux, différents modèles et couleurs."
+    },
+    {
+        image: "ressources/gallerie/phoneAigle.jpg",
+        title: "Support téléphone aigle",
+        description: "Support téléphone en bois, gravé avec soin pour un rendu unique."
+    },
+    {
+        image: "ressources/gallerie/boucleRose.jpg",
+        title: "Boucle d'oreille fleur",
+        description: "Boucle d'oreille fleur de rose, élégante et originale, gravée avec soin pour un rendu unique."
+    },
+    {
+        image: "ressources/gallerie/boucleG.jpg",
+        title: "Boucle d'oreille géométrique",
+        description: "Boucle d'oreille géométrique, élégante et originale, gravée avec soin pour un rendu unique."
+    },
+    {
+        image: "ressources/gallerie/portePlume.jpg",
+        title: "Porte plume en bois",
+        description: "Porte plume en bois, élégant pour sublimé vos plus belle plume."
+    },
+    {
+        image: "ressources/gallerie/porteBougie.jpg",
+        title: "Porte bougie en bois",
+        description: "Porte bougie en forme ded flocon de neige, idéal pour décorer vos tables de fêtes."
+    },
 ];
 
 
