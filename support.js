@@ -50,7 +50,7 @@ export const photos = [
         description: "Differente taille possible et choix de la couleur."
     },
     {
-        image: "ressources/gallerie/arbre.jpg",
+        image: "ressources/gallerie/arbre2.jpg",
         title: "Arbre de vie",
         description: "Arbre de vie personnalisable, jusqu'a 380cm de diamètre."
     },
@@ -137,7 +137,27 @@ export const photos = [
     {
         image: "ressources/gallerie/porteBougie.jpg",
         title: "Porte bougie en bois",
-        description: "Porte bougie en forme ded flocon de neige, idéal pour décorer vos tables de fêtes."
+        description: "Porte bougie en forme de flocon de neige, idéal pour décorer vos tables de fêtes."
+    },
+    {
+        image: "ressources/gallerie/arbreBougie.jpg",
+        title: "Porte bougie en bois",
+        description: "Porte bougie en forme de sapin de noël, idéal pour décorer vos tables de fêtes."
+    },
+    {
+        image: "ressources/gallerie/lanterne.jpg",
+        title: "Lanterne en bois",
+        description: "Lanterne de noël en bois, différente couleur ou en bois pour décorer les fêtes."
+    },
+    {
+        image: "ressources/gallerie/cubeM.jpg",
+        title: "Cube de metatron",
+        description: "Cube de metatron, est une figure de géométrie sacrée composée de 13 cercles reliés par 78 lignes, dérivée du “Fruit de Vie”."
+    },
+    {
+        image: "ressources/gallerie/bebe.jpg",
+        title: "Panneau décoration naissance",
+        description: "Panneau de décoration pour chambre de bébé."
     },
 ];
 
